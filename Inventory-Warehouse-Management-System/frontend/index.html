@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Warehouse Management System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span>📦</span><div><b>Inventory</b><small>Warehouse System</small></div></div>
+    <nav id="nav">
+      <button data-page="dashboard" class="active">🏠 Dashboard</button>
+      <button data-page="products">📦 Products</button>
+      <button data-page="categories">🗂️ Categories</button>
+      <button data-page="suppliers">🚚 Suppliers</button>
+      <button data-page="warehouses">🏭 Warehouses</button>
+      <button data-page="inventory">📊 Inventory</button>
+      <button data-page="purchases">📥 Purchases</button>
+      <button data-page="sales">🛒 Sales</button>
+    </nav>
+    <div class="api-status" id="apiStatus">● Checking API...</div>
+  </aside>
+
+  <main>
+    <header>
+      <div><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle">Warehouse overview and live statistics</p></div>
+      <button class="refresh" id="refreshBtn">↻ Refresh</button>
+    </header>
+    <section id="content"></section>
+  </main>
+</div>
+
+<div id="toast"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
